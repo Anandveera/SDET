@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumHomeWork.Day_6_Assignment">
+      <class name="Week5.HomeWork.Challenge67_SortedUniqueArray">
         <methods>
-          <include name="lanuchChrome"/>
-          <include name="w3School"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- SeleniumHomeWork.Day_6_Assignment -->
+      </class> <!-- Week5.HomeWork.Challenge67_SortedUniqueArray -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
