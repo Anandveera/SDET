@@ -6,6 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Challenge67_SortedUniqueArray {
+	
+//	Challange#67
 	@Test
 	public void test1() {
 		Assert.assertEquals(4, findSamllestValue(new int[] {1,4,3,2}));

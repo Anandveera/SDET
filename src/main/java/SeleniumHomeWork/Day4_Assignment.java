@@ -90,9 +90,11 @@ Leaf$1234
           WebElement ques =  driver.findElement(By.xpath("//span[@data-aura-rendered-by='44:3208;a']"));
           ques.isDisplayed();
           String attribute = ques.getAttribute(Question);
-          if(Question.equals(attribute)) {
+          if(Question.toString().equals(attribute.toString())) {
         	  System.out.println("Question ?"+ques.isDisplayed());
         	Thread.sleep(2000);  
+          }else {
+        	  System.out.println("Not equal");
           }
 		
 	driver.quit();
