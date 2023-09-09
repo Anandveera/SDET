@@ -1,4 +1,4 @@
-package Selenium.TestCase;
+package selenium.testcase;
 
 import java.util.concurrent.TimeUnit;
 

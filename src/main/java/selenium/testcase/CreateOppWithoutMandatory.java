@@ -1,5 +1,6 @@
-package Selenium.TestCase;
+package selenium.testcase;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -12,8 +13,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import groovy.time.Duration;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CreateOppWithoutMandatory {
@@ -49,7 +48,7 @@ public class CreateOppWithoutMandatory {
 			
 		}
 		@Test
-		public void login() {
+		public void login() throws InterruptedException {
 			WebElement name =driver.findElement(By.xpath("//input[@name=\"username\"]"));
 			name.sendKeys(username);
 			WebElement password1 =driver.findElement(By.xpath("//input[@id=\"password\"]"));
@@ -62,20 +61,23 @@ public class CreateOppWithoutMandatory {
 			
 			driver.findElement(By.xpath("//button[text()=\"View All\"]")).click();
 			//driver.switchTo().alert().accept();
-			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//p[text()=\"Sales\"]")).click();
 			//driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+			Thread.sleep(5000);
 			WebElement element = driver.findElement(By.xpath("//a[@title=\"Opportunities\"]"));
-			WebDriverWait wait = new WebDriverWait(driver,10);
+			element.click();
+			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(element));
+			//element.click();
 			//WebElement element = driver.findElement(By.xpath("//label[text()='Opportunity Name']/following::input"));
 		    JavascriptExecutor executor = (JavascriptExecutor)driver;
 		    executor.executeScript("arguments[0].click();", element);
 			//driver.findElement(By.xpath("//a[@title=\"Accounts\"]")).click();
-			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//div[@title='New']")).click();
 			
-			    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			   // driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			    driver.findElement(By.xpath("//label[text()='Close Date']/following::input")).clear();
 			    driver.findElement(By.xpath("//label[text()='Close Date']/following::input")).sendKeys("31.8.2023");
 			    driver.findElement(By.xpath("//button[@name='SaveEdit']")).click();

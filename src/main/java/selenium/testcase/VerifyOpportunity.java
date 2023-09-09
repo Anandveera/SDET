@@ -1,5 +1,6 @@
-package Selenium.TestCase;
+package selenium.testcase;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -62,7 +63,7 @@ public class VerifyOpportunity {
 		driver.findElement(By.xpath("//p[text()=\"Sales\"]")).click();
 		//driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		WebElement element = driver.findElement(By.xpath("//a[@title=\"Opportunities\"]"));
-		WebDriverWait wait = new WebDriverWait(driver,10);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
 		//WebElement element = driver.findElement(By.xpath("//label[text()='Opportunity Name']/following::input"));
 	    JavascriptExecutor executor = (JavascriptExecutor)driver;

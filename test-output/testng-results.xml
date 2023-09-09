@@ -1,62 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-30T13:21:26 IST" name="Default suite" finished-at="2023-08-30T13:21:46 IST" duration-ms="19708">
+  <suite started-at="2023-09-09T16:23:38 IST" name="Default suite" finished-at="2023-09-09T16:24:07 IST" duration-ms="29278">
     <groups>
     </groups>
-    <test started-at="2023-08-30T13:21:26 IST" name="Default test" finished-at="2023-08-30T13:21:46 IST" duration-ms="19708">
-      <class name="Selenium.TestCase.VerifyOpportunity">
-        <test-method is-config="true" signature="lanuchChrome()[pri:0, instance:Selenium.TestCase.VerifyOpportunity@452e19ca]" started-at="2023-08-30T13:21:26 IST" name="lanuchChrome" finished-at="2023-08-30T13:21:28 IST" duration-ms="2113" status="PASS">
+    <test started-at="2023-09-09T16:23:38 IST" name="Default test" finished-at="2023-09-09T16:24:07 IST" duration-ms="29278">
+      <class name="selenium.testcase.JiraTestCase">
+        <test-method is-config="true" signature="lanuchChrome()[pri:0, instance:selenium.testcase.JiraTestCase@37fb0bed]" started-at="2023-09-09T16:23:38 IST" name="lanuchChrome" finished-at="2023-09-09T16:23:43 IST" duration-ms="5457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanuchChrome -->
-        <test-method signature="login()[pri:0, instance:Selenium.TestCase.VerifyOpportunity@452e19ca]" started-at="2023-08-30T13:21:28 IST" name="login" finished-at="2023-08-30T13:21:46 IST" duration-ms="17572" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "Sort"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "Sort"
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-at java.base/java.lang.Integer.parseInt(Integer.java:660)
-at java.base/java.lang.Integer.parseInt(Integer.java:778)
-at Selenium.TestCase.VerifyOpportunity.login(VerifyOpportunity.java:82)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+        <test-method signature="enterEmailid()[pri:1, instance:selenium.testcase.JiraTestCase@37fb0bed]" started-at="2023-09-09T16:23:43 IST" name="enterEmailid" finished-at="2023-09-09T16:23:47 IST" duration-ms="3832" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Selenium.TestCase.VerifyOpportunity -->
+        </test-method> <!-- enterEmailid -->
+        <test-method signature="createSDET()[pri:2, instance:selenium.testcase.JiraTestCase@37fb0bed]" started-at="2023-09-09T16:23:47 IST" name="createSDET" finished-at="2023-09-09T16:24:00 IST" duration-ms="12499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSDET -->
+        <test-method signature="verifyBaclog()[pri:3, instance:selenium.testcase.JiraTestCase@37fb0bed]" started-at="2023-09-09T16:24:00 IST" name="verifyBaclog" finished-at="2023-09-09T16:24:07 IST" duration-ms="7463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBaclog -->
+      </class> <!-- selenium.testcase.JiraTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
