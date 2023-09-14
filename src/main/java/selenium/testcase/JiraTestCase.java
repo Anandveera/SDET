@@ -55,9 +55,12 @@ public class JiraTestCase {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//h4[normalize-space()='SDET-5']")).click();
 		driver.findElement(By.xpath("//a[@data-testid='navigation-apps-sidebar-software-classic.ui.menu.backlog-link']//span[@class='css-1274njb']")).click();
-		driver.findElement(By.xpath("//input[@placeholder='Search backlog']")).sendKeys("SDET Anand");
+		WebElement input = driver.findElement(By.xpath("//input[@placeholder='Search backlog']"));
+		input.sendKeys("SDET Anand");
 		WebElement findElement = driver.findElement(By.xpath("//span[@class='sc-1f9ncqa-0 hKuFgd']//mark[@class='_bfhkwtfv _syaz1fxt'][normalize-space()='SDET Anand']"));
 		findElement.isDisplayed();
+		String text = findElement.getText();
+		
 	}
 	@AfterMethod
 	public void closeWindow() {

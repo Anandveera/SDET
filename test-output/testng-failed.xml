@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.testcase.JiraTestCase">
+      <class name="Week5.HomeWork.ShuffleString">
         <methods>
-          <include name="lanuchChrome"/>
-          <include name="verifyBaclog"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- selenium.testcase.JiraTestCase -->
+      </class> <!-- Week5.HomeWork.ShuffleString -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
