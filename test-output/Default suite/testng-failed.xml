@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Week5.HomeWork.ShuffleString">
+      <class name="week5.HomeWork.Challenge67_SortedUniqueArray">
         <methods>
-          <include name="test"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- Week5.HomeWork.ShuffleString -->
+      </class> <!-- week5.HomeWork.Challenge67_SortedUniqueArray -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
