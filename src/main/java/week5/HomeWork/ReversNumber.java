@@ -14,10 +14,12 @@ public class ReversNumber {
 		for(int i=0;i>=num;i--) {
 			if(i!=0) {
 				temp+=i;
-				System.out.println(temp);
+				
 			}
 			
+			
 		}
+		System.out.println(temp);
 		return 0;
 		
 	}

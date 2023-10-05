@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="week5.HomeWork.OddEven">
+      <class name="week5.HomeWork.FirstUniqueChar">
         <methods>
-          <include name="isEven"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- week5.HomeWork.OddEven -->
+      </class> <!-- week5.HomeWork.FirstUniqueChar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

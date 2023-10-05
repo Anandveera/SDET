@@ -24,7 +24,7 @@ public class ConsecutiveCharacters {
 			
 	
 		//
-			while(right<str.length()) {
+			while(right<str.length()) {	
 				char L = str.charAt(left);
 				char R = str.charAt(right);
 				if(L==R) {

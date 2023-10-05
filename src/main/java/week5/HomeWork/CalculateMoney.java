@@ -12,15 +12,17 @@ public class CalculateMoney {
 	
 	public int addOneDollar(int dollor) {
 		int temp = 0;
+		int d=0;
 		for(int i = 0;i<=dollor;i++) {
 		//	System.out.println(i);
 			if(i<dollor) {
-				temp = i+1;
-			//	temp++;
-			System.out.println(temp);
-			
+				temp = i+1;	
+				
+				
+				
 			}
 			
+			System.out.println(d);
 		}
 		return temp;
 		
